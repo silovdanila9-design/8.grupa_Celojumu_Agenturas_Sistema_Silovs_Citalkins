@@ -1,0 +1,1597 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="menuJosla">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="menuDarbibas">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Darbības"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="miPieteiksanas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pieteikšanās sistēmā"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miPieteiksanasActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miRegistracija">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Jauna klienta reģistrācija"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miRegistracijaActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miKatalogs">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ceļojumu katalogs"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miKatalogsActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miRezervacijas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Rezervācijas"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miRezervacijasActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miMaksajumi">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Maksājumu uzskaite"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miMaksajumiActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miVesture">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Rezervāciju vēsture"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miVestureActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miIzrakstities">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Izrakstīties"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miIzrakstitiesActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miKlienti">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Klientu saraksts (admins)"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miKlientiActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuPalidziba">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Palīdzība"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="miPalidziba">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Kā lietot programmu"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miPalidzibaActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="miParProgrammu">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Par programmu"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="miParProgrammuActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+
+    <Container class="javax.swing.JDialog" name="dlgPieteiksanas">
+      <Properties>
+        <Property name="defaultCloseOperation" type="int" value="2"/>
+        <Property name="title" type="java.lang.String" value="Pieteikšanās sistēmā"/>
+      </Properties>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblPieVirsraksts" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblPieLietotajvards" min="-2" max="-2" attributes="0"/>
+                <Component id="lblPieParole" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="txtPieLietotajvards" min="-2" pref="200" max="-2" attributes="0"/>
+                <Component id="pwdPieParole" min="-2" pref="200" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="btnPieIeiet" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnPieAtcelt" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+              <Component id="lblPieVirsraksts" min="-2" pref="-1" max="-2" attributes="0"/>
+              <EmptySpace min="14" pref="14" max="14" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblPieLietotajvards" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtPieLietotajvards" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="8" pref="8" max="8" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblPieParole" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="pwdPieParole" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="btnPieIeiet" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnPieAtcelt" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+          <Component class="javax.swing.JLabel" name="lblPieVirsraksts">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Pieteikšanās sistēmā"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblPieLietotajvards">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Lietotājvārds:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtPieLietotajvards">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblPieParole">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Parole:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JPasswordField" name="pwdPieParole">
+          </Component>
+          <Component class="javax.swing.JButton" name="btnPieIeiet">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ielogoties"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPieIeietActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnPieAtcelt">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Atcelt"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPieAtceltActionPerformed"/>
+          </Events>
+          </Component>
+      </SubComponents>
+    </Container>
+
+    <Container class="javax.swing.JDialog" name="dlgRegistracija">
+      <Properties>
+        <Property name="defaultCloseOperation" type="int" value="2"/>
+        <Property name="title" type="java.lang.String" value="Jauna klienta reģistrācija"/>
+      </Properties>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblRegVirsraksts" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblRegVards" min="-2" max="-2" attributes="0"/>
+                <Component id="lblRegUzvards" min="-2" max="-2" attributes="0"/>
+                <Component id="lblRegEpasts" min="-2" max="-2" attributes="0"/>
+                <Component id="lblRegTalrunis" min="-2" max="-2" attributes="0"/>
+                <Component id="lblRegLietotajvards" min="-2" max="-2" attributes="0"/>
+                <Component id="lblRegParole" min="-2" max="-2" attributes="0"/>
+                <Component id="lblRegParole2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="txtRegVards" min="-2" pref="200" max="-2" attributes="0"/>
+                <Component id="txtRegUzvards" min="-2" pref="200" max="-2" attributes="0"/>
+                <Component id="txtRegEpasts" min="-2" pref="200" max="-2" attributes="0"/>
+                <Component id="txtRegTalrunis" min="-2" pref="200" max="-2" attributes="0"/>
+                <Component id="txtRegLietotajvards" min="-2" pref="200" max="-2" attributes="0"/>
+                <Component id="pwdRegParole" min="-2" pref="200" max="-2" attributes="0"/>
+                <Component id="pwdRegParole2" min="-2" pref="200" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="btnRegSaglabat" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnRegAtcelt" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+              <Component id="lblRegVirsraksts" min="-2" pref="-1" max="-2" attributes="0"/>
+              <EmptySpace min="14" pref="14" max="14" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblRegVards" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtRegVards" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="8" pref="8" max="8" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblRegUzvards" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtRegUzvards" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="8" pref="8" max="8" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblRegEpasts" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtRegEpasts" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="8" pref="8" max="8" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblRegTalrunis" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtRegTalrunis" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="8" pref="8" max="8" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblRegLietotajvards" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtRegLietotajvards" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="8" pref="8" max="8" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblRegParole" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="pwdRegParole" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="8" pref="8" max="8" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblRegParole2" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="pwdRegParole2" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="btnRegSaglabat" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnRegAtcelt" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+          <Component class="javax.swing.JLabel" name="lblRegVirsraksts">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Jauna klienta reģistrācija"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblRegVards">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Vārds:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtRegVards">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblRegUzvards">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Uzvārds:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtRegUzvards">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblRegEpasts">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="E-pasts:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtRegEpasts">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblRegTalrunis">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Tālrunis:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtRegTalrunis">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblRegLietotajvards">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Lietotājvārds:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtRegLietotajvards">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblRegParole">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Parole:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JPasswordField" name="pwdRegParole">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblRegParole2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Atkārtot paroli:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JPasswordField" name="pwdRegParole2">
+          </Component>
+          <Component class="javax.swing.JButton" name="btnRegSaglabat">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Reģistrēties"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegSaglabatActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnRegAtcelt">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Atcelt"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegAtceltActionPerformed"/>
+          </Events>
+          </Component>
+      </SubComponents>
+    </Container>
+
+    <Container class="javax.swing.JDialog" name="dlgKatalogs">
+      <Properties>
+        <Property name="defaultCloseOperation" type="int" value="2"/>
+        <Property name="title" type="java.lang.String" value="Ceļojumu katalogs"/>
+      </Properties>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblKatVirsraksts" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblKatInfo" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblKatMeklesana" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="txtKatMeklesana" min="-2" pref="160" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnKatMeklet" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnKatVisi" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="scpKat" pref="0" max="32767" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="btnKatPievienot" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnKatLabot" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnKatDzest" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="btnKatAizvert" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+              <Component id="lblKatVirsraksts" min="-2" pref="-1" max="-2" attributes="0"/>
+              <EmptySpace min="14" pref="14" max="14" attributes="0"/>
+              <Component id="lblKatInfo" min="-2" pref="-1" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblKatMeklesana" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtKatMeklesana" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnKatMeklet" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnKatVisi" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Component id="scpKat" pref="250" max="32767" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="btnKatPievienot" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnKatLabot" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnKatDzest" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="btnKatAizvert" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+          <Component class="javax.swing.JLabel" name="lblKatVirsraksts">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ceļojumu katalogs"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblKatInfo">
+          <Properties>
+            <Property name="text" type="java.lang.String" value=" "/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblKatMeklesana">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Meklēt:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtKatMeklesana">
+          </Component>
+          <Component class="javax.swing.JButton" name="btnKatMeklet">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Meklēt"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKatMekletActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnKatVisi">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Rādīt visus"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKatVisiActionPerformed"/>
+          </Events>
+          </Component>
+          <Container class="javax.swing.JScrollPane" name="scpKat">
+
+            <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+            <SubComponents>
+              <Component class="javax.swing.JTable" name="tblKat">
+                <Properties>
+                  <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                    <Table columnCount="8" rowCount="4">
+                      <Column editable="true" title="ID" type="java.lang.Object"/>
+                      <Column editable="true" title="Nosaukums" type="java.lang.Object"/>
+                      <Column editable="true" title="Galamērķis" type="java.lang.Object"/>
+                      <Column editable="true" title="Apraksts" type="java.lang.Object"/>
+                      <Column editable="true" title="Sākuma datums" type="java.lang.Object"/>
+                      <Column editable="true" title="Beigu datums" type="java.lang.Object"/>
+                      <Column editable="true" title="Cena (EUR)" type="java.lang.Object"/>
+                      <Column editable="true" title="Vietas" type="java.lang.Object"/>
+                    </Table>
+                  </Property>
+                </Properties>
+              </Component>
+            </SubComponents>
+          </Container>
+          <Component class="javax.swing.JButton" name="btnKatPievienot">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Pievienot ceļojumu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKatPievienotActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnKatLabot">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Labot ceļojumu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKatLabotActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnKatDzest">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Dzēst ceļojumu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKatDzestActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnKatAizvert">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Aizvērt"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKatAizvertActionPerformed"/>
+          </Events>
+          </Component>
+      </SubComponents>
+    </Container>
+
+    <Container class="javax.swing.JDialog" name="dlgCelojums">
+      <Properties>
+        <Property name="defaultCloseOperation" type="int" value="2"/>
+        <Property name="title" type="java.lang.String" value="Ceļojuma dati"/>
+      </Properties>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblCfVirsraksts" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblCfNosaukums" min="-2" max="-2" attributes="0"/>
+                <Component id="lblCfGalamerkis" min="-2" max="-2" attributes="0"/>
+                <Component id="lblCfApraksts" min="-2" max="-2" attributes="0"/>
+                <Component id="lblCfSakums" min="-2" max="-2" attributes="0"/>
+                <Component id="lblCfBeigas" min="-2" max="-2" attributes="0"/>
+                <Component id="lblCfCena" min="-2" max="-2" attributes="0"/>
+                <Component id="lblCfVietas" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="txtCfNosaukums" min="-2" pref="200" max="-2" attributes="0"/>
+                <Component id="txtCfGalamerkis" min="-2" pref="200" max="-2" attributes="0"/>
+                <Component id="txtCfApraksts" min="-2" pref="200" max="-2" attributes="0"/>
+                <Component id="txtCfSakums" min="-2" pref="120" max="-2" attributes="0"/>
+                <Component id="txtCfBeigas" min="-2" pref="120" max="-2" attributes="0"/>
+                <Component id="txtCfCena" min="-2" pref="120" max="-2" attributes="0"/>
+                <Component id="txtCfVietas" min="-2" pref="120" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="btnCfSaglabat" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnCfAtcelt" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+              <Component id="lblCfVirsraksts" min="-2" pref="-1" max="-2" attributes="0"/>
+              <EmptySpace min="14" pref="14" max="14" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblCfNosaukums" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtCfNosaukums" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="8" pref="8" max="8" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblCfGalamerkis" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtCfGalamerkis" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="8" pref="8" max="8" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblCfApraksts" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtCfApraksts" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="8" pref="8" max="8" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblCfSakums" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtCfSakums" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="8" pref="8" max="8" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblCfBeigas" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtCfBeigas" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="8" pref="8" max="8" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblCfCena" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtCfCena" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="8" pref="8" max="8" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblCfVietas" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtCfVietas" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="btnCfSaglabat" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnCfAtcelt" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+          <Component class="javax.swing.JLabel" name="lblCfVirsraksts">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ceļojuma dati"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblCfNosaukums">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Nosaukums:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtCfNosaukums">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblCfGalamerkis">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Galamērķis:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtCfGalamerkis">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblCfApraksts">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Apraksts:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtCfApraksts">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblCfSakums">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sākuma datums (dd.mm.gggg):"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtCfSakums">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblCfBeigas">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Beigu datums (dd.mm.gggg):"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtCfBeigas">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblCfCena">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cena (EUR):"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtCfCena">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblCfVietas">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Vietu skaits:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtCfVietas">
+          </Component>
+          <Component class="javax.swing.JButton" name="btnCfSaglabat">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Saglabāt"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCfSaglabatActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnCfAtcelt">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Atcelt"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCfAtceltActionPerformed"/>
+          </Events>
+          </Component>
+      </SubComponents>
+    </Container>
+
+    <Container class="javax.swing.JDialog" name="dlgRezervacijas">
+      <Properties>
+        <Property name="defaultCloseOperation" type="int" value="2"/>
+        <Property name="title" type="java.lang.String" value="Rezervācijas"/>
+      </Properties>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblRezVirsraksts" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblRezKlients" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="cmbRezKlients" min="-2" pref="200" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblRezCelojums" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="cmbRezCelojums" min="-2" pref="280" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblRezPersonas" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="txtRezPersonas" min="-2" pref="50" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnRezPievienot" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="scpRez" pref="0" max="32767" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="btnRezAtceltRez" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnRezDzest" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnRezAtjaunot" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="btnRezAizvert" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+              <Component id="lblRezVirsraksts" min="-2" pref="-1" max="-2" attributes="0"/>
+              <EmptySpace min="14" pref="14" max="14" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblRezKlients" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="cmbRezKlients" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblRezCelojums" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="cmbRezCelojums" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblRezPersonas" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtRezPersonas" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnRezPievienot" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Component id="scpRez" pref="250" max="32767" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="btnRezAtceltRez" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnRezDzest" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnRezAtjaunot" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="btnRezAizvert" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+          <Component class="javax.swing.JLabel" name="lblRezVirsraksts">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Rezervāciju pārvaldība"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblRezKlients">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Klients:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JComboBox" name="cmbRezKlients">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblRezCelojums">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ceļojums:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JComboBox" name="cmbRezCelojums">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblRezPersonas">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Personu skaits:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtRezPersonas">
+          </Component>
+          <Component class="javax.swing.JButton" name="btnRezPievienot">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Rezervēt"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRezPievienotActionPerformed"/>
+          </Events>
+          </Component>
+          <Container class="javax.swing.JScrollPane" name="scpRez">
+
+            <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+            <SubComponents>
+              <Component class="javax.swing.JTable" name="tblRez">
+                <Properties>
+                  <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                    <Table columnCount="7" rowCount="4">
+                      <Column editable="true" title="ID" type="java.lang.Object"/>
+                      <Column editable="true" title="Klients" type="java.lang.Object"/>
+                      <Column editable="true" title="Ceļojums" type="java.lang.Object"/>
+                      <Column editable="true" title="Personas" type="java.lang.Object"/>
+                      <Column editable="true" title="Kopsumma (EUR)" type="java.lang.Object"/>
+                      <Column editable="true" title="Statuss" type="java.lang.Object"/>
+                      <Column editable="true" title="Izveidota" type="java.lang.Object"/>
+                    </Table>
+                  </Property>
+                </Properties>
+              </Component>
+            </SubComponents>
+          </Container>
+          <Component class="javax.swing.JButton" name="btnRezAtceltRez">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Atcelt rezervāciju"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRezAtceltRezActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnRezDzest">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Dzēst rezervāciju"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRezDzestActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnRezAtjaunot">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Atjaunot sarakstu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRezAtjaunotActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnRezAizvert">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Aizvērt"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRezAizvertActionPerformed"/>
+          </Events>
+          </Component>
+      </SubComponents>
+    </Container>
+
+    <Container class="javax.swing.JDialog" name="dlgMaksajumi">
+      <Properties>
+        <Property name="defaultCloseOperation" type="int" value="2"/>
+        <Property name="title" type="java.lang.String" value="Maksājumu uzskaite"/>
+      </Properties>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblMakVirsraksts" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblMakInfo" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblMakRezervacija" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="txtMakRezervacija" min="-2" pref="70" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="lblMakSumma" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="txtMakSumma" min="-2" pref="100" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblMakVeids" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="cmbMakVeids" min="-2" pref="180" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnMakRekistr" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="scpMak" pref="0" max="32767" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="btnMakDzest" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnMakAtjaunot" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="btnMakAizvert" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+              <Component id="lblMakVirsraksts" min="-2" pref="-1" max="-2" attributes="0"/>
+              <EmptySpace min="14" pref="14" max="14" attributes="0"/>
+              <Component id="lblMakInfo" min="-2" pref="-1" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblMakRezervacija" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtMakRezervacija" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="lblMakSumma" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtMakSumma" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblMakVeids" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="cmbMakVeids" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnMakRekistr" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Component id="scpMak" pref="230" max="32767" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="btnMakDzest" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnMakAtjaunot" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="btnMakAizvert" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+          <Component class="javax.swing.JLabel" name="lblMakVirsraksts">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Maksājumu uzskaite"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblMakInfo">
+          <Properties>
+            <Property name="text" type="java.lang.String" value=" "/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblMakRezervacija">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Rezervācijas ID:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtMakRezervacija">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblMakSumma">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Summa (EUR):"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtMakSumma">
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblMakVeids">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Maksājuma veids:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JComboBox" name="cmbMakVeids">
+          </Component>
+          <Component class="javax.swing.JButton" name="btnMakRekistr">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Reģistrēt maksājumu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMakRekistrActionPerformed"/>
+          </Events>
+          </Component>
+          <Container class="javax.swing.JScrollPane" name="scpMak">
+
+            <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+            <SubComponents>
+              <Component class="javax.swing.JTable" name="tblMak">
+                <Properties>
+                  <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                    <Table columnCount="6" rowCount="4">
+                      <Column editable="true" title="ID" type="java.lang.Object"/>
+                      <Column editable="true" title="Rezervācijas ID" type="java.lang.Object"/>
+                      <Column editable="true" title="Klients" type="java.lang.Object"/>
+                      <Column editable="true" title="Summa (EUR)" type="java.lang.Object"/>
+                      <Column editable="true" title="Veids" type="java.lang.Object"/>
+                      <Column editable="true" title="Datums" type="java.lang.Object"/>
+                    </Table>
+                  </Property>
+                </Properties>
+              </Component>
+            </SubComponents>
+          </Container>
+          <Component class="javax.swing.JButton" name="btnMakDzest">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Dzēst maksājumu (admins)"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMakDzestActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnMakAtjaunot">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Atjaunot sarakstu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMakAtjaunotActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnMakAizvert">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Aizvērt"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMakAizvertActionPerformed"/>
+          </Events>
+          </Component>
+      </SubComponents>
+    </Container>
+
+    <Container class="javax.swing.JDialog" name="dlgVesture">
+      <Properties>
+        <Property name="defaultCloseOperation" type="int" value="2"/>
+        <Property name="title" type="java.lang.String" value="Rezervāciju vēsture"/>
+      </Properties>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblVesVirsraksts" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblVesStatuss" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="cmbVesStatuss" min="-2" pref="150" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnVesRadit" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="scpVes" pref="0" max="32767" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblVesKopsavilkums" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="btnVesAizvert" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+              <Component id="lblVesVirsraksts" min="-2" pref="-1" max="-2" attributes="0"/>
+              <EmptySpace min="14" pref="14" max="14" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblVesStatuss" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="cmbVesStatuss" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnVesRadit" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Component id="scpVes" pref="280" max="32767" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="lblVesKopsavilkums" min="-2" pref="-1" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="btnVesAizvert" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+          <Component class="javax.swing.JLabel" name="lblVesVirsraksts">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Rezervāciju vēsture"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblVesStatuss">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Statuss:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JComboBox" name="cmbVesStatuss">
+          </Component>
+          <Component class="javax.swing.JButton" name="btnVesRadit">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Rādīt"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVesRaditActionPerformed"/>
+          </Events>
+          </Component>
+          <Container class="javax.swing.JScrollPane" name="scpVes">
+
+            <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+            <SubComponents>
+              <Component class="javax.swing.JTable" name="tblVes">
+                <Properties>
+                  <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                    <Table columnCount="7" rowCount="4">
+                      <Column editable="true" title="ID" type="java.lang.Object"/>
+                      <Column editable="true" title="Ceļojums" type="java.lang.Object"/>
+                      <Column editable="true" title="Personas" type="java.lang.Object"/>
+                      <Column editable="true" title="Kopsumma (EUR)" type="java.lang.Object"/>
+                      <Column editable="true" title="Statuss" type="java.lang.Object"/>
+                      <Column editable="true" title="Izveidota" type="java.lang.Object"/>
+                      <Column editable="true" title="Apmaksāts (EUR)" type="java.lang.Object"/>
+                    </Table>
+                  </Property>
+                </Properties>
+              </Component>
+            </SubComponents>
+          </Container>
+          <Component class="javax.swing.JLabel" name="lblVesKopsavilkums">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Kopā rezervāciju: 0"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnVesAizvert">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Aizvērt"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVesAizvertActionPerformed"/>
+          </Events>
+          </Component>
+      </SubComponents>
+    </Container>
+
+    <Container class="javax.swing.JDialog" name="dlgKlienti">
+      <Properties>
+        <Property name="defaultCloseOperation" type="int" value="2"/>
+        <Property name="title" type="java.lang.String" value="Klientu saraksts"/>
+      </Properties>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblKliVirsraksts" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblKliMeklesana" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="txtKliMeklesana" min="-2" pref="160" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnKliMeklet" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnKliVisi" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="scpKli" pref="0" max="32767" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="btnKliDzest" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Component id="btnKliAtjaunot" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="btnKliAizvert" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+              <Component id="lblKliVirsraksts" min="-2" pref="-1" max="-2" attributes="0"/>
+              <EmptySpace min="14" pref="14" max="14" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblKliMeklesana" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="txtKliMeklesana" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnKliMeklet" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnKliVisi" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Component id="scpKli" pref="260" max="32767" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="btnKliDzest" min="-2" pref="-1" max="-2" attributes="0"/>
+                <Component id="btnKliAtjaunot" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="btnKliAizvert" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+          <Component class="javax.swing.JLabel" name="lblKliVirsraksts">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Klientu saraksts"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblKliMeklesana">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Meklēt:"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JTextField" name="txtKliMeklesana">
+          </Component>
+          <Component class="javax.swing.JButton" name="btnKliMeklet">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Meklēt"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKliMekletActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnKliVisi">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Rādīt visus"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKliVisiActionPerformed"/>
+          </Events>
+          </Component>
+          <Container class="javax.swing.JScrollPane" name="scpKli">
+
+            <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+            <SubComponents>
+              <Component class="javax.swing.JTable" name="tblKli">
+                <Properties>
+                  <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                    <Table columnCount="7" rowCount="4">
+                      <Column editable="true" title="ID" type="java.lang.Object"/>
+                      <Column editable="true" title="Vārds" type="java.lang.Object"/>
+                      <Column editable="true" title="Uzvārds" type="java.lang.Object"/>
+                      <Column editable="true" title="E-pasts" type="java.lang.Object"/>
+                      <Column editable="true" title="Tālrunis" type="java.lang.Object"/>
+                      <Column editable="true" title="Lietotājvārds" type="java.lang.Object"/>
+                      <Column editable="true" title="Loma" type="java.lang.Object"/>
+                    </Table>
+                  </Property>
+                </Properties>
+              </Component>
+            </SubComponents>
+          </Container>
+          <Component class="javax.swing.JButton" name="btnKliDzest">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Dzēst izvēlēto klientu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKliDzestActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnKliAtjaunot">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Atjaunot sarakstu"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKliAtjaunotActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnKliAizvert">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Aizvērt"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKliAizvertActionPerformed"/>
+          </Events>
+          </Component>
+      </SubComponents>
+    </Container>
+
+    <Container class="javax.swing.JDialog" name="dlgPalidziba">
+      <Properties>
+        <Property name="defaultCloseOperation" type="int" value="2"/>
+        <Property name="title" type="java.lang.String" value="Palīdzība (Help)"/>
+      </Properties>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="lblPalVirsraksts" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="scpPal" pref="0" max="32767" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+            <Group type="102" attributes="0">
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+              <Component id="btnPalAizvert" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" attributes="0">
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+              <Component id="lblPalVirsraksts" min="-2" pref="-1" max="-2" attributes="0"/>
+              <EmptySpace min="14" pref="14" max="14" attributes="0"/>
+              <Component id="scpPal" pref="300" max="32767" attributes="0"/>
+              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="btnPalAizvert" min="-2" pref="-1" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+              <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+          <Component class="javax.swing.JLabel" name="lblPalVirsraksts">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Palīdzība — kā lietot programmu"/>
+          </Properties>
+          </Component>
+          <Container class="javax.swing.JScrollPane" name="scpPal">
+
+            <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+            <SubComponents>
+              <Component class="javax.swing.JTextArea" name="txtaPalidziba">
+              </Component>
+            </SubComponents>
+          </Container>
+          <Component class="javax.swing.JButton" name="btnPalAizvert">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Aizvērt"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPalAizvertActionPerformed"/>
+          </Events>
+          </Component>
+      </SubComponents>
+    </Container>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="0"/>
+    <Property name="title" type="java.lang.String" value="Ceļojumu aģentūras sistēma — galvenais logs"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="java.lang.Boolean" value="false"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowClosing" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowClosing"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+        <Group type="102" attributes="0">
+          <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+          <Component id="lblTitulis" min="-2" max="-2" attributes="0"/>
+          <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+        </Group>
+        <Group type="102" attributes="0">
+          <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+          <Component id="lblStatuss" min="-2" max="-2" attributes="0"/>
+          <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+        </Group>
+        <Group type="102" attributes="0">
+          <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+          <Component id="btnPieteiksanas" min="-2" pref="210" max="-2" attributes="0"/>
+          <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+          <Component id="btnRegistracija" min="-2" pref="210" max="-2" attributes="0"/>
+          <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+        </Group>
+        <Group type="102" attributes="0">
+          <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+          <Component id="btnKatalogs" min="-2" pref="210" max="-2" attributes="0"/>
+          <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+          <Component id="btnRezervacijas" min="-2" pref="210" max="-2" attributes="0"/>
+          <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+        </Group>
+        <Group type="102" attributes="0">
+          <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+          <Component id="btnMaksajumi" min="-2" pref="210" max="-2" attributes="0"/>
+          <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+          <Component id="btnVesture" min="-2" pref="210" max="-2" attributes="0"/>
+          <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+        </Group>
+        <Group type="102" attributes="0">
+          <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+          <Component id="btnKlienti" min="-2" pref="210" max="-2" attributes="0"/>
+          <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+          <Component id="btnPalidziba" min="-2" pref="210" max="-2" attributes="0"/>
+          <EmptySpace min="20" pref="20" max="20" attributes="0"/>
+        </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+        <Group type="102" attributes="0">
+          <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+          <Component id="lblTitulis" min="-2" pref="-1" max="-2" attributes="0"/>
+          <EmptySpace min="14" pref="14" max="14" attributes="0"/>
+          <Component id="lblStatuss" min="-2" pref="-1" max="-2" attributes="0"/>
+          <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Component id="btnPieteiksanas" min="-2" pref="-1" max="-2" attributes="0"/>
+            <Component id="btnRegistracija" min="-2" pref="-1" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Component id="btnKatalogs" min="-2" pref="-1" max="-2" attributes="0"/>
+            <Component id="btnRezervacijas" min="-2" pref="-1" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Component id="btnMaksajumi" min="-2" pref="-1" max="-2" attributes="0"/>
+            <Component id="btnVesture" min="-2" pref="-1" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Component id="btnKlienti" min="-2" pref="-1" max="-2" attributes="0"/>
+            <Component id="btnPalidziba" min="-2" pref="-1" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+          <EmptySpace min="16" pref="16" max="16" attributes="0"/>
+        </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+          <Component class="javax.swing.JLabel" name="lblTitulis">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ceļojumu aģentūras sistēma"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JLabel" name="lblStatuss">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Nav pieslēgties — pieslēdzieties vai reģistrējieties"/>
+          </Properties>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnPieteiksanas">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Pieteikšanās sistēmā"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPieteiksanasActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnRegistracija">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Jauna klienta reģistrācija"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegistracijaActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnKatalogs">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Ceļojumu katalogs"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKatalogsActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnRezervacijas">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Rezervācijas"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRezervacijasActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnMaksajumi">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Maksājumu uzskaite"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMaksajumiActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnVesture">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Rezervāciju vēsture"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVestureActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnKlienti">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Klientu saraksts (admins)"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnKlientiActionPerformed"/>
+          </Events>
+          </Component>
+          <Component class="javax.swing.JButton" name="btnPalidziba">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Palīdzība (Help)"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPalidzibaActionPerformed"/>
+          </Events>
+          </Component>
+  </SubComponents>
+</Form>

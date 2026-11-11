@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"celojumu_agenturass_sistema_silovs_citalkins"},{"l":"dao"},{"l":"db"},{"l":"gui"},{"l":"model"},{"l":"util"}];updateSearchResults();
